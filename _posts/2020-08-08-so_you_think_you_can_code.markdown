@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "So you think you can code?"
-date:       2020-08-08 18:38:40 +0000
+date:       2020-08-08 14:38:41 -0400
 permalink:  so_you_think_you_can_code
 ---
 
