@@ -1,11 +1,11 @@
 # Site settings
 author: Eugene O'Neil
-title: 
+title: A Newbies Journey
 header-img: img/home-bg.png
 email: ejo7220@gmail.com
 copyright_name: Eugene O'Neil
 description: > # this means to ignore newlines until "baseurl:"
-  
+  How hard could it be?
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Ejo415
