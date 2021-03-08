@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Setting up postgreSQL and YOU!"
-date:       2021-03-05 23:47:34 +0000
+date:       2021-03-05 18:47:34 -0500
 permalink:  setting_up_postgresql_and_you
 ---
 
@@ -106,5 +106,7 @@ Congratulations! You've just prevented the theft of your own data!
 
 Till next time dear viewers.
 
+
+(EDIT: so when i was writing this in preview everything was in code snippits where its supposed to be, and when i published they flipped. so thats fun.)
 
 
