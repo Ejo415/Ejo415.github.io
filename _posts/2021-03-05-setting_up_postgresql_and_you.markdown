@@ -77,7 +77,7 @@ from there you want to make a `.env` file in the root of your directory and then
 
 NOW the .env and anthing in it will be ignored by git and not be uploaded into your repo on github.
 
-Go into your .env file and add  `POSTGRES_USER=*whatever your username is*`  and  ` POSTGRES_PASS=*whatever your password is*`
+Go into your .env file and add  `POSTGRES_USER=*whatever your username is*`  and  `POSTGRES_PASS=*whatever your password is*`
 
  (note `POSTGRES_USER` and `POSTGRES_PASS` are just variables your setting so they can be anything I just do this so its easy to keep track of if you have multiple things in your `.env` such as oauth credentials)
  
