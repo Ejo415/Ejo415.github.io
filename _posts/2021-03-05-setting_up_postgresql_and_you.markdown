@@ -8,6 +8,7 @@ permalink:  setting_up_postgresql_and_you
 
 Ok so at some point theres every chance in the world you'll begin using postgreSQL for your Rails backend database. In THAT event you'll need to plug your credentials into your `database.yml` file and ittl look something like this:
 
+
 ```
 
 default: &default
@@ -36,7 +37,8 @@ production:
   database: *project name*_production
   username: *project name*
   password: <%= ENV['*project name*_DATABASE_PASSWORD'] %>
-	```
+```
+	
 
 
 That was alot so let me zoom in on the important bits
