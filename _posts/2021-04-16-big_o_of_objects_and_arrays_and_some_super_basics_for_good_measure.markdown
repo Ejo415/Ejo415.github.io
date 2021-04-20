@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Big O of Objects and Arrays (and some super basics for good measure)"
-date:       2021-04-16 21:08:49 +0000
+date:       2021-04-16 17:08:50 -0400
 permalink:  big_o_of_objects_and_arrays_and_some_super_basics_for_good_measure
 ---
 
@@ -12,10 +12,10 @@ Objects are unordered data structures and everything is stored in key : value pa
 
 ```
 let colors = {
-                    Favorite: "Green"
-										Least Favorite: "Mauve"
-										Dark: "Midnight Blue"
-										RGB: ["Red", "Green", "Blue"]
+          Favorite: "Green"
+					Least Favorite: "Mauve"
+					Dark: "Midnight Blue"
+					RGB: ["Red", "Green", "Blue"]
 }
 ```
 
