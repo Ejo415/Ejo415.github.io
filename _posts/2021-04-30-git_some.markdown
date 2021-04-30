@@ -1,0 +1,43 @@
+---
+layout: post
+title:      "Git Some  "
+date:       2021-04-30 14:38:12 +0000
+permalink:  git_some
+---
+
+
+Ok so lets take a break from algorithms for a minute and talk about something thats equally as important as a developer but ever really talked about as much as it should be when you're learning. Git. As you can tell I spent literally zero time thinking of a title and am frankly ashamed of it.
+
+Git (*NOT* GitHub) is a distributed version control system that you install on your machine that essentially tracks the changes you make to a codebase from beginning to end. So in the event of some kind of code breaking mistake that you can't seem to fix you can roll everything back to a previous commit.
+
+Anyway HERE are the basics of Git so you can get going with a bit of confidence.
+
+`git init` - This is going to be the first thing you do in a project. what it does is initiialize a blank repository for all of your code to be stored in.
+
+`git status` - This command just shows the current status of the repo. It shows things like whether the current branch is up to date with the main branch or if there have been any changes that havent been commited yet.
+
+`git add [file name]` - This will stage the selected files so when you commit only those files will be commited. This way you can better control the size and content in any commit. You can add multiple files to an add or add each individually if youd like before you commit. [also note that you can run `git add .` to add all untracked changes at once]
+
+`git commit -m "commit message"` - This is how you commit everything you have staged, using the` -m` flag to add a commit message.
+
+`git log` - This command pulls up a complete log of all commits. If its particularly long youll have to hit `enter` to keep moving through the list or ` ctrl-z` to exit out if you're done.
+
+`git checkout [branch name, commit hash, main]` - Ok, so there are a few different checkout commands that you can use. `git checkout [branch name]` will change the branch you're working on to the specified one. `git checkout [commit hash]` will essentially roll you back to a specific commit based on the hash you enter (the commit hashs can be found using `git log`) and lastly `git checkout main` will change you back over to the main branch.
+
+Ok before I go any further let me explain what a branch is. I want you to think of Doc Browns chart of how time works in Back to the Future 2.
+
+![](https://pbs.twimg.com/media/DL71v1RXUAAO6iJ.jpg)
+
+Thats the one. 
+
+Think of the original timeline as the main branch in Git. Thats your production code. Where the timeline splits off is a branch, you can test something out, try new styling, do whatever you want without effecting the main branch.
+
+Ok. Now that THATS taken care of back to the commands (only a few left I promise)
+
+`git branch` - This command will list all current branches that exist within the repo. 
+
+`git branch (new branch name)` - Adding a new name after `git branch` will *create* a new branch using said name.
+
+and finally `git merge (branch name)` - This will merge the listed branch into the main branch. That new feature you've been working on is now part of the main codebase. Congratulations!
+
+So those are the basics of Git, as always theres a whole lot more but this will get you started being a productive memeber of society. If you want to dive further in the Git documentation can be found [here](https://git-scm.com/doc).
