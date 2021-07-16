@@ -1,0 +1,80 @@
+---
+layout: post
+title:      "Two Sum      "
+date:       2021-07-16 20:04:11 +0000
+permalink:  two_sum
+---
+
+
+Here be another common interview question, Two Sum.
+
+> Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+> 
+> You may assume that each input would have exactly one solution, and you may not use the same element twice.
+> 
+> You can return the answer in any order.
+> 
+
+So right off the bat, lets start off the  function with two variables, one called `numIndex` which just instantiates a new `Map()` and an empty array called `res`, which will be out final result containing the indicies.
+
+```
+const twoSum = function(nums, target) {
+    let numIndex = new Map();
+    let res = []
+```
+
+Ok, next we kick off our for loop followed by a variable called `num`, which is just ` nums[i]` to make the following code a bit more readable and a variable called complement which is the target minus `num`.
+
+
+
+    for (let i = 0; i < nums.length; i++){
+        let num = nums[i];
+        let complement = target - num;
+				
+Here this if statement checks to see if the complement exists in `numIndex` if it *does* it will put the complement into index 0 of the `res` array and then put `i` in `res[1]` and then return `res` to finish the function
+        
+        if (numIndex.has(complement)){
+            res[0] = numIndex.get(complement)
+            res[1] = i;
+            
+            return res
+        }
+				
+If the complement is not in `numIndex` it will add the key/value pair from the loop into `numIndex` and move to the next index of the `nums` array.
+
+        numIndex.set(num, i)
+        
+    }
+		
+If nothing in the `nums` array equals the target at the end of the for loop we return `res` as an empty array.
+
+```
+   return res
+};
+```
+
+All said and done we're left with this
+
+```
+const twoSum = function(nums, target) {
+    let numIndex = new Map();
+    let res = []
+    for (let i = 0; i < nums.length; i++){
+        let num = nums[i];
+        let complement = target - num;
+        
+        if (numIndex.has(complement)){
+            res[0] = numIndex.get(complement)
+            res[1] = i;
+            
+            return res
+        }
+        numIndex.set(num, i)
+        
+    }
+    return res
+};
+```
+
+And thats Two Sum, as i said its a pretty common interview question (and variations of it) so by all means, try and do better than I did and go get a job.
+
